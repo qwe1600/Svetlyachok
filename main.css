@@ -1,0 +1,314 @@
+/* Шрифты */
+.tuffy-regular {
+    font-family: "Tuffy", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tuffy-bold {
+    font-family: "Tuffy", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.tuffy-regular-italic {
+    font-family: "Tuffy", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.tuffy-bold-italic {
+    font-family: "Tuffy", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+body{
+    background-image: url("./images/background.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    position: relative;    
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    width: 70%;
+    pointer-events: none;
+    position: absolute;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+
+.logo-side{
+    width: 40%;
+    height: 120px;
+    background-image: url(./images/Group_180.png);
+    background-size: 100%;
+    background-position: bottom;
+
+}
+
+.nav-side{
+    width: 60%;
+    height: 120px;
+    background-image: url(./images/Group_319.png);
+    background-size: 100%;
+    background-position: bottom;
+    background-position-x: 0;
+
+}
+
+.nav{
+    position: relative;     
+    width: 70%;    
+}
+
+
+.nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a{
+    color: darkgreen;
+    font-family: "Tuffy", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: clamp(14px, 2vw, 16px);
+    text-decoration: none;
+}
+.nav ul a:hover{
+    color: #ff8867;
+    transition: 0.5s color ease;
+}
+
+
+
+header{
+    display: flex;
+    justify-content: center;  
+    height: 100%; 
+}
+
+.main-header{
+    margin-top: 150px;
+    width: 70%;
+    color: #ff8867;
+    font-family: "Tuffy", sans-serif;
+    line-height: 1;
+    font-weight: 500;
+}
+
+h1{
+    text-transform: uppercase;
+    color: #ff8867;
+    font-size: 64px;
+    font-size: clamp(18px, 3vw, 64px);
+    font-family: "Tuffy", sans-serif;
+    line-height: 1;
+    font-weight: 800;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    margin-left: 4vw;
+}
+
+
+.bg{
+    display: flex; 
+    width: 70%;
+}
+
+.zayavka{
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: darkgreen;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 30px 40px;
+    margin-left: 4vw;
+
+}
+.button-img{
+    rotate: 0deg;
+    scale: 1;
+    transition: transform 0.5s ease;
+    margin-left: 4.5vw;
+
+}
+
+.zayavka:hover + .button-img{
+    transform: scale(1.2) rotate(-10deg);
+}
+.zayavka:hover{
+    color: #ff8867;
+    transition: color 0.5s ease;
+}
+
+
+.cloud1{
+    width: 270px;
+    height: 270px;
+    background-image: url("./images/photo1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    padding: auto 1px;
+    display: flex;
+    justify-content: center; /* по горизонтали */
+    align-items: center;     /* по вертикали */
+
+    position: absolute;
+    left: 42%;
+    top: 10vw;
+}
+.cloud1 p{
+    font-size: 16px;
+    color: #ff8867;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.cloud-left{
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    z-index: 25;
+}
+
+.cloud-right{
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    z-index: 26;
+    right: 150px;
+}
+
+.main-information{
+    display: flex;    
+    background-color: transparent;
+}
+
+h2{
+    font-family: "Tuffy", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #ff8867;
+    font-size: xx-large;
+    margin-left: 4vw;
+}
+
+.txt-p {
+    font-size: 16px;
+    color: #ff8867;
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    width: 50%;
+    position: absolute;
+    top: 25%;
+    left: 13%;
+    z-index: 2;
+}
+
+.txt-h3{
+    font-size: 26px;
+    color: darkgreen;
+    text-align: justify;
+    font-family: "Tuffy", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    z-index: 2;
+}
+span{
+    color: #ff8867;
+}
+
+.main-bg-content{
+    width: 100%;
+    position: relative;
+    height:180px;
+}
+
+
+
+.content-course{
+    padding: 0 1.3vw;
+    margin: 0 15px;
+    width: 100vw;
+    height: 500px;
+    background-position: top center; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    /* overflow: hidden; */
+    /* background-size: auto; */
+    position: relative;
+    text-align: left;
+}
+
+.content-course h3{
+    font-size: 1.8vw;
+    color: darkgreen;
+    text-align: justify;
+    font-family: "Tuffy", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    z-index: 0;
+
+}
+
+.content-course p{
+    font-size: 0.8vw;
+    text-align: left;
+    font-style: normal;
+    font-family: Arial, sans-serif;
+    z-index: 0;
+    width: 80%;
+    color: rgb(1, 58, 16);
+}
+
+.content-course button{
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: darkgreen;
+    text-transform: uppercase;
+    font-weight: 700;
+    z-index: 30;
+    position: absolute;
+    left: 0; 
+    margin-left: 20px;
+}
